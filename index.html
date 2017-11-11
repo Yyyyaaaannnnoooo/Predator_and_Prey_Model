@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Predator_and_Prey_Model</title>
+
+	<script src="libraries/p5.js"></script>
+	<script src="libraries/p5.dom.js"></script>
+	<script src="libraries/p5.sound.js"></script>
+	<script src="sketch.js"></script>
+	<script src="AgentModel.js"></script>
+	<script src="Agent.js"></script>
+
+	<style>
+	body {
+		margin:0;
+		padding:0;
+	}
+	canvas {
+		/*margin:auto;*/
+	}
+	input{	
+		left: 5px;	
+		background: #fff;
+		position: absolute;
+		width: 150px;
+		border: solid 3px #000;
+		height: 20px;
+		float: left;
+		z-index: 2;
+	}
+	/*styling buttons*/
+	button{
+		position: absolute;
+		left: 5px;
+		background-color: #fff;
+		border: solid 3px #000;
+		font-family: Helvetica;
+		font-weight: bolder;
+		font-size: 20px;
+		padding-top: 3px;
+	}
+	button:hover{
+		border: solid 3px #0f0;
+	}
+	/*class description*/
+	.cnv{
+		position: absolute;
+		left: 0px;
+		z-index: 0;
+		border: solid 3px #000;
+		padding: 5px 5px 3px 5px;
+	}
+	.inputValue{
+		position: absolute;
+		left: 185px;
+		background: #fff;
+		color: #000;
+		font-family: Helvetica;
+		font-weight: bolder;
+		font-size: 15px;
+		border: solid 3px #000;
+		cursor: ne-resize;
+		z-index: 2;
+		padding: 5px 5px 3px 5px;
+	}
+</style>
+</head>
+<body onload="updateValue()">
+	<div class="cnv" id="myCnv"></div>
+	<input type="range" style="top: 5px" id="threshold" value="2" min="2" max="100" step="1" onchange="updateValue()">
+	<input type="range" style="top: 55px" id="maxHealth" value="300" min="5" max="300" step="1" onchange="updateValue()">
+	<input type="range" style="top: 105px" id="empty" value="90" min="10" max="90" step="1" onchange="updateValue()">
+	<input type="range" style="top: 155px" id="prey" value="62" min="10" max="100" step="1" onchange="updateValue()" onload="updateValue()">
+	<button type="button" style="top: 205px;" id="initModel" onclick="initModel()">PLAY</button>
+	<div class="inputValue" style="top: 5px" id="thehreshold">THRESHOLD: 2</div>
+	<div class="inputValue" style="top: 55px" id="themaxHealth">MAX HEALTH: 10</div>
+	<div class="inputValue" style="top: 105px" id="theempty">EMPTY: 30%</div>
+	<div class="inputValue" style="top: 155px" id="theprey">PREY: 30%</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
