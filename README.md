@@ -1,6 +1,6 @@
 <h1>Predator and Prey Model</h1>
 
-<h2><a href=" https://yyyyaaaannnnoooo.github.io/Predator_and_Prey_Model/">WEB APP</a></h2>
+<a href=" https://yyyyaaaannnnoooo.github.io/Predator_and_Prey_Model/">WEB APP</a><br><br>
 The model is based on the following simple rules:
 <h3>Prey:</h3>
 <li>Tries to move in a random direction.</li>
