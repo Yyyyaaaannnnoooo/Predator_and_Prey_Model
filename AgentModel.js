@@ -328,7 +328,7 @@ function AgentModel(pixSize, t, percN, percPrey, MaxH) {
 	    }
 	}
 	/**function show
-	* shows tha agents as square / pixel
+	* shows tha agents as square / pixel 
 	*/
 	this.show = function() {
 		noStroke();
