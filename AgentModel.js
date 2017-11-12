@@ -34,7 +34,7 @@ function AgentModel(pixSize, t, percN, percPrey, MaxH) {
 	this.ps = pixSize;
 	this.grid = []; 
 	let direction =[createVector(0, 1), createVector(1, 0), createVector(0, -1), createVector(-1, 0)];
-	console.log(direction[floor(random(3))].x);
+	// console.log(direction[floor(random(3))].x);
 	let rows = floor(height / pixSize),
 		cols = floor(width / pixSize),
 		//for the infogrphic we need to keep track of the amount of different agents
